@@ -87,7 +87,8 @@
                     return console.log("%cThe Json file is parsed successfully", "font-weight:bold;");
                 })
                 .catch((error) => {
-                    console.log(error);
+                    console.log("%cThe Json file is parsed DFEATED", "font-weight:bold;");
+                    console.log('%c'+error,"font-weight:bold;");
                 });
         }
     </script>
