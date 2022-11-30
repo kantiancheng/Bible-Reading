@@ -15,6 +15,7 @@
 
         //从服务器获取Json文件
         function get_json(language) {
+            let parsed_json;
             //语言列表
             /*  if (language == "ar_svd") {
                   //阿拉伯语
@@ -84,14 +85,16 @@
                 .then(function (json) {
                     console.log(json);
                     console.log("%cThe Json file is parsed successfully", "font-weight:bold;");
-                    return json;
+                    parsed_json = json;
                 })
                 .catch((error) => {
                     console.log("%cThe Json file is parsed DFEATED", "font-weight:bold;");
                     console.log('%c' + error, "font-weight:bold;");
                 });
+            return parsed_json;
         }
 
+        function s
     </script>
 </body>
 
