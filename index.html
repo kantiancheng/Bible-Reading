@@ -13,7 +13,7 @@
         //Json
         let Bible;
 
-        //获取Json函数
+        //从服务器获取Json文件
         function get_json(language) {
             //语言列表
             /*  if (language == "ar_svd") {
@@ -82,15 +82,16 @@
                         return response.json();
                     })
                 .then(function (json) {
-                    Bible = json;
                     console.log(json);
-                    return console.log("%cThe Json file is parsed successfully", "font-weight:bold;");
+                    console.log("%cThe Json file is parsed successfully", "font-weight:bold;");
+                    return json;
                 })
                 .catch((error) => {
                     console.log("%cThe Json file is parsed DFEATED", "font-weight:bold;");
-                    console.log('%c'+error,"font-weight:bold;");
+                    console.log('%c' + error, "font-weight:bold;");
                 });
         }
+
     </script>
 </body>
 
