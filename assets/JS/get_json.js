@@ -73,7 +73,7 @@ function get_json(language) {
         .then(function (json) {
             console.log(json);
             console.log("%cThe Json file is parsed successfully", "font-weight:bold;");
-            parsed_json = json;
+            Bible = json;
         })
         .catch((error) => {
             console.log("%cThe Json file is parsed DFEATED", "font-weight:bold;");
