@@ -7,9 +7,10 @@
 }
 
 .Sides_Bar>div {
-    margin-top: 1%;
-    margin-bottom: 1%;
-    font-size: 10%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    font-size: 60%;
+    line-height: 1;
 }
 
 .Sides_Bar>div>div {
