@@ -76,5 +76,5 @@ function get_json(language) {
             console.log("%cThe Json file is parsed DFEATED", "font-weight:bold;");
             console.log('%c' + error, "font-weight:bold;");
         });
-    return parsed_json;
+    return "variable: 'Bible' are The json";
 }
