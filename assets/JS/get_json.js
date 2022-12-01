@@ -1,3 +1,6 @@
+//Json
+let Bible;
+
 //从服务器获取Json文件
 function get_json(language) {
     let parsed_json;
