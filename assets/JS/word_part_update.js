@@ -1,5 +1,5 @@
 //文字区域dom更新
-async function word_part_update(language, book, chapter, verse) {
+function word_part_update(language, book, chapter, verse) {
 
     let word_part_element = document.getElementById("Words_Part");
 
@@ -7,5 +7,5 @@ async function word_part_update(language, book, chapter, verse) {
         get_json(language);
     });
 
-    await word_part_element.innerHTML = analyze_json(book, chapter, verse);
+    word_part_element.innerHTML = analyze_json(book, chapter, verse);
 }
