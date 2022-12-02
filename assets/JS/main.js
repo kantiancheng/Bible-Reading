@@ -1,0 +1,1 @@
+onload = word_part_update("zh_ncv", 0);
