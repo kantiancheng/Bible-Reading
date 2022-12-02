@@ -1,7 +1,8 @@
 .Words_Part{
+    position: fixed;
     background-color: rgb(167, 159, 159);
-    margin-top: 0;
-    margin-right: 0;
+    top: 0;
+    right: 0;
     height: 100%;
     width: 83%;
 }
