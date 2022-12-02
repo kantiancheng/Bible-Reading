@@ -13,6 +13,5 @@ function word_part_update(language, book, chapter, verse) {
     }
 
     get_json(language);
-
     setTimeout(update_html(), 3000);
 }
