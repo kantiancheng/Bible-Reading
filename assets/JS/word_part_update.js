@@ -14,7 +14,9 @@ function word_part_update(language, book, chapter, verse) {
                 console.log("%cfail to update the page, re-trying.....", "font-weight:bold;");
                 console.log("%c" + re_try_times + " re-try times remaining", "font-weight:bold;");
                 re_try_times--;
-                setTimeout(update_html(), 3000);
+                setTimeout(function () {
+                    update_html();
+                }, 3000);
             }
         }
     }
