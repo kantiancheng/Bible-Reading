@@ -5,9 +5,9 @@ function analyze_json(book, chapter, verse) {
         Analyze_json = Bible[book].chapters;
         let Revise = "";
         for (let i = 0; i < Analyze_json.length; i++) {
-            Revise += "<b>" + i + "</b>";
+            Revise += "<b>" + (i + 1) + "</b>";
             for (let j = 0; j < Analyze_json[i].length; j++) {
-                Revise += "<sup>" + j + "</sup>";
+                Revise += "<sup>" + (j + 1) + "</sup>";
                 Revise += Analyze_json[i][j];
             }
         }
@@ -17,7 +17,7 @@ function analyze_json(book, chapter, verse) {
         Analyze_json = Bible[book].chapters[chapter];
         let Revise = "";
         for (let i = 0; i < Analyze_json.length; i++) {
-            Revise += "<sup>" + i + "</sup>";
+            Revise += "<sup>" + (i + 1) + "</sup>";
             Revise += Analyze_json[i];
         }
         Analyze_json = Revise;
