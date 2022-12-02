@@ -11,9 +11,16 @@ function analyze_json(book, chapter, verse) {
                 Revise += Analyze_json[i][j];
             }
         }
+        Analyze_json = Revise;
         console.log("%cSince there are no valid chapters, the entire book will be returned directly.", "font-weight:bold;");
     } else if (verse == undefined) {
         Analyze_json = Bible[book].chapters[chapter];
+        let Revise = "";
+        for (let i = 0; i < Analyze_json.length; i++) {
+            Revise += "<sup>" + i + "</sup>";
+            Revise += Analyze_json[i];
+        }
+        Analyze_json = Revise;
         console.log("%cThe entire chapter is returned because there is no valid verse.", "font-weight:bold;");
     } else {
         Analyze_json = Bible[book].chapters[chapter][verse];
