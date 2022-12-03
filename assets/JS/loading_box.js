@@ -2,9 +2,9 @@
 function loading_box_onload() {
     document.getElementById("Main_Box").style.display = "none";
     let loading_box_HTML = document.getElementById("Body");
-    let loding_box_el = document.createElement("div");
-    loding_box_el.id = "Loading_box";
-    loding_box_el.className = "Loading_box";
+    let loading_box_el = document.createElement("div");
+    loading_box_el.id = "Loading_box";
+    loading_box_el.className = "Loading_box";
     loading_box_HTML.append(loading_box_el);
 }
 
