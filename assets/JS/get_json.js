@@ -68,6 +68,7 @@ function get_json(language) {
         .then(
             function (response) {
                 console.log("%cStart parsing the returned Json file", "font-weight:bold;");
+                loading
                 return response.json();
             })
         .then(function (json) {

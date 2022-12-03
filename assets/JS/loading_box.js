@@ -8,7 +8,7 @@ function loading_box_onload() {
 }
 
 //加载框更新
-function loading_box_onload(words) {
+function loading_box_update(words) {
     let loding_box_el = document.getElementById("Loading_box");
     let loding_box_newline = document.createElement("div");
     loding_box_newline.innerHTML = words;
