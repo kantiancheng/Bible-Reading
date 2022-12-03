@@ -12,7 +12,7 @@ function analyze_json(book, chapter, verse) {
             }
         }
         Analyze_json = Revise;
-        console.log("%cSince there are no valid chapters, the entire book will be returned directly.", "font-weight:bold;");
+        loading_box_update("Since there are no valid chapters, the entire book will be returned directly.");
     } else if (verse == undefined) {
         Analyze_json = Bible[book].chapters[chapter];
         let Revise = "";
@@ -21,11 +21,11 @@ function analyze_json(book, chapter, verse) {
             Revise += Analyze_json[i];
         }
         Analyze_json = Revise;
-        console.log("%cThe entire chapter is returned because there is no valid verse.", "font-weight:bold;");
+        loading_box_update("The entire chapter is returned because there is no valid verse.");
     } else {
         Analyze_json = Bible[book].chapters[chapter][verse];
-        console.log("%cAll information will be returned" + "chapter" + chapter + " ," + "verse" + verse + ".", "font-weight:bold;");
+        loading_box_update("All information will be returned" + "chapter" + chapter + " ," + "verse" + verse + ".");
     }
-    console.log("%cSuccessfully analyze Json file:", "font-weight:bold;");
+    loading_box_update("Successfully analyze Json file:");
     return Analyze_json;
 }

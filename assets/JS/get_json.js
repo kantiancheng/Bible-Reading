@@ -63,22 +63,21 @@ function get_json(language) {
           //越南语
 
       }*/
-    console.log("%cStart requesting from the server json file", "font-weight:bold;");
+    loading_box_update("Start requesting from the server json file");
     fetch('https://raw.githubusercontent.com/kantiancheng/Bible-Reading/main/Bible_json/' + language + '.json')
         .then(
             function (response) {
-                console.log("%cStart parsing the returned Json file", "font-weight:bold;");
                 loading_box_update("Start parsing the returned Json file");
                 return response.json();
             })
         .then(function (json) {
             console.log(json);
-            console.log("%cThe Json file is parsed successfully", "font-weight:bold;");
+            loading_box_update("The Json file is parsed successfully");
             Bible = json;
         })
         .catch((error) => {
-            console.log("%cThe Json file is parsed DFEATED", "font-weight:bold;");
+            loading_box_update("The Json file is parsed DFEATED");
             console.log('%c' + error, "font-weight:bold;");
         });
-    console.log("%cvariable: 'Bible' are The json", "font-weight:bold;");
+    loading_box_update("variable: 'Bible' are The json");
 }

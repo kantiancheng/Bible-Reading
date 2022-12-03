@@ -7,13 +7,13 @@ function word_part_update(language, book, chapter, verse) {
     function update_html() {
         try {
             word_part_element.innerHTML = analyze_json(book, chapter, verse);
-            console.log("%cSuccessfully update the page", "font-weight:bold;");
+            loading_box_update("Successfully update the page");
         } catch {
             if (re_try_times <= 0) {
-                console.log("%cfail to update the page!!!pleas re-try later.", "font-weight:bold;");
+                loading_box_update("fail to update the page!!!pleas re-try later.");
             } else {
-                console.log("%cfail to update the page, re-trying.....", "font-weight:bold;");
-                console.log("%c" + re_try_times + " re-try times remaining", "font-weight:bold;");
+                loading_box_update("fail to update the page, re-trying.....");
+                loading_box_update("" + re_try_times + " re-try times remaining");
                 re_try_times--;
                 setTimeout(function () {
                     update_html();
