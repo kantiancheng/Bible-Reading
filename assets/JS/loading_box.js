@@ -2,12 +2,10 @@
 function loading_box_onload() {
     document.getElementById("Main_Box").style.display = "none";
     let loading_box_HTML = document.getElementById("Body");
-    let loading_box_el_outdiv = document.createElement("div");
     let loding_box_el = document.createElement("div");
     loding_box_el.id = "Loading_box";
     loding_box_el.className = "Loading_box";
-    loading_box_el_outdiv.append(loding_box_el);
-    loading_box_HTML.append(loading_box_el_outdiv);
+    loading_box_HTML.append(loading_box_el);
 }
 
 //加载框更新
