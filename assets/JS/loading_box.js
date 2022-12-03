@@ -14,8 +14,8 @@ function loading_box_update(words) {
     document.getElementById("Loading_box").display = "inline";
     let loading_box_el = document.getElementById("Loading_box");
     let br_el = document.createElement("br");
-    loading_box_el.append(words);
     loading_box_el.append(br_el);
+    loading_box_el.append(words);
     loading_box_el.append(br_el);
     console.log("%c" + words, "font-weight:bold;");
 }
