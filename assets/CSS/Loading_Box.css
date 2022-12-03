@@ -8,7 +8,7 @@
     border-style: solid;
     border-color: rgba(0, 0, 0, 0.555);
     color: rgb(26, 255, 0);
-    text-align: center;
+    text-align: left;
     font-size: large;
     overflow: auto;
 }
