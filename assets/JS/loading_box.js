@@ -10,6 +10,7 @@ function loading_box_onload() {
 
 //加载框更新
 function loading_box_update(words) {
+    document.getElementById("Main_Box").style.display = "none";
     document.getElementById("Loading_box").display = "inline";
     let loading_box_el = document.getElementById("Loading_box");
     let br_el = document.createElement("br");
