@@ -3,11 +3,11 @@
     margin: 0 auto;
     height: auto;
     line-height: auto;
-    background-color: rgba(0, 0, 0, 0.432);
+    background-color: rgb(0, 0, 0);
 }
 
 .Loading_box>div {
-    color: rgb(255, 255, 255);
+    color: rgb(26, 255, 0);
     text-align: center;
     font-size: large;
     margin: 0 auto;
