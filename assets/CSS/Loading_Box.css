@@ -3,6 +3,7 @@
     margin: 0 auto;
     height: auto;
     line-height: auto;
+    background-color: rgba(0, 0, 0, 0.432);
 }
 
 .Loading_box>div {
