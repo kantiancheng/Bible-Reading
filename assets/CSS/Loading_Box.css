@@ -7,7 +7,6 @@ div>.Loading_box {
 }
 
 .Loading_box {
-    display: flex;
     align-items: center;
     margin: 0 auto;
     background-color: rgb(0, 0, 0);
