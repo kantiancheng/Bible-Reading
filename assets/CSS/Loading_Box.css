@@ -1,3 +1,13 @@
-.Loading_box{
-    
+.Loading_box {
+    display: flex;
+    margin: 0 auto;
+    height: auto;
+    line-height: auto;
+}
+
+.Loading_box>div {
+    text-align: center;
+    font-size: large;
+    margin: 0 auto;
+    overflow: auto;
 }
