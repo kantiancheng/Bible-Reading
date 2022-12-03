@@ -12,8 +12,9 @@ function loading_box_update(words) {
     let loding_box_el = document.getElementById("Loading_box");
     let loding_box_newline = document.createElement("div");
     loding_box_newline.innerHTML = words;
-    loding_box_el.append("<br>" + loding_box_newline);
-    console.log("%c"+words, "font-weight:bold;");
+    loding_box_el.append("<br>");
+    loding_box_el.append(loding_box_newline);
+    console.log("%c" + words, "font-weight:bold;");
 }
 
 //加载框删除
