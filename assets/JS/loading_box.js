@@ -1,7 +1,8 @@
 //加载框
 function loading_box_onload() {
+    document.getElementById("Main_Box").style.display = "none";
     let loading_box_HTML = document.getElementById("Body");
-    let loading_box_el_outdiv=document.createElement("div");
+    let loading_box_el_outdiv = document.createElement("div");
     let loding_box_el = document.createElement("div");
     loding_box_el.id = "Loading_box";
     loding_box_el.className = "Loading_box";
@@ -22,4 +23,5 @@ function loading_box_update(words) {
 //加载框删除
 function loading_box_remove() {
     document.getElementById("Loading_box").remove();
+    document.getElementById("Main_Box").style.display = "inline";
 }
