@@ -11,7 +11,7 @@ function loading_box_onload() {
 //加载框更新
 function loading_box_update(words) {
     let loding_box_el = document.getElementById("Loading_box");
-    loding_box_el.append("<br>");
+    loding_box_el.append("<br />");
     loding_box_el.append(words);
     console.log("%c" + words, "font-weight:bold;");
 }
