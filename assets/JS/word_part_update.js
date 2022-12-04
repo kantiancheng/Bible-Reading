@@ -15,11 +15,11 @@ function word_part_update(language, book, chapter, verse) {
             if (re_try_times <= 0) {
                 loading_box_update("fail to update the page!!!pleas re-try later.");
                 let i = 10;
-               setInterval(() => {
-                i--;
-                loading_box_update("Page are going to be reload in" + i + "second");
-                if (i <= 0) window.location.reload();
-               }, 1000);
+                setInterval(() => {
+                    i--;
+                    loading_box_update("Page are going to be reload in" + i + "second");
+                    if (i <= 0) window.location.reload();
+                }, 1000);
             } else {
                 loading_box_update("fail to update the page, re-trying.....");
                 loading_box_update("" + re_try_times + " re-try times remaining");
