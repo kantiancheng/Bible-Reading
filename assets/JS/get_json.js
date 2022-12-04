@@ -1,5 +1,6 @@
 //Json
 let Bible;
+let Language = "en_bbe";
 
 //从服务器获取Json文件
 function get_json(language) {
