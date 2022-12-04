@@ -2,7 +2,7 @@
 function word_part_update(language, book, chapter, verse) {
     Bible = null;
     let word_part_element = document.getElementById("Words_Part");
-    let re_try_times = 15;
+    let re_try_times = 7;
 
     function update_html() {
         try {
