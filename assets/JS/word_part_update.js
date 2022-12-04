@@ -12,7 +12,7 @@ function word_part_update(language, book, chapter, verse) {
                 loading_box_remove();
             }, 1000);
         } catch {
-            if (re_try_times <= 0) {
+            if (re_try_times == 0) {
                 loading_box_update("fail to update the page!!!pleas re-try later.");
                 alert("fail to update the page!!!pleas re-try later!");
                 window.close();
