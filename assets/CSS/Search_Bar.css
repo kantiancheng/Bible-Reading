@@ -6,12 +6,18 @@
     background-color: aquamarine;
 }
 
-.Search_Bar_language {}
+.Search_Bar_language {
+    margin: 0 auto;
+    text-align: center;
+    font-size: large;
+    width: 30%;
+    height: 100%;
+}
 
 .Search_Bar_Select {
     margin: 0 auto;
     text-align: center;
-    font-size: large;
+    font-size: medium;
     width: 30%;
     height: 100%;
 }
