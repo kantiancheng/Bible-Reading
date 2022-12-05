@@ -1,6 +1,5 @@
 //为边框添加点击监听事件
 function side_bar_click() {
-
     document.getElementById("Sides_Bar_Genesis").addEventListener("click", () => { word_part_update(Language, 0) });
     document.getElementById("Sides_Bar_Exodus").addEventListener("click", () => { word_part_update(Language, 1) });
     document.getElementById("Sides_Bar_Leviticus").addEventListener("click", () => { word_part_update(Language, 2) });
