@@ -1,15 +1,13 @@
-.Search_Bar{
-
+.Search_Bar {
+    margin-top: 20px;
+    width: 80%;
+    height: 10%;
+    margin-bottom: 10px;
+    background-color: aquamarine;
 }
 
-.Search_Bar_language{
+.Search_Bar_language {}
 
-}
+.Search_Bar_Box {}
 
-.Search_Bar_Box{
-
-}
-
-.Search_Bar_Button{
-
-}
+.Search_Bar_Button {}
