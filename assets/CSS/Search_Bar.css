@@ -11,7 +11,7 @@
     text-align: center;
     font-size: large;
     width: 30%;
-    height: 4.4vh;
+    height: 4.95vh;
 }
 
 .Search_Bar_Select {
@@ -19,7 +19,7 @@
     text-align: center;
     font-size: medium;
     width: 30%;
-    height: 4.4vh;
+    height: 4.95vh;
 }
 
 .Search_Bar_Box {
@@ -35,5 +35,5 @@
     text-align: center;
     font-size: medium;
     width: 20%;
-    height: 4.4vh;
+    height: 4.95vh;
 }
