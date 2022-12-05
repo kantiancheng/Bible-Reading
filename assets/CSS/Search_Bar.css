@@ -8,7 +8,13 @@
 
 .Search_Bar_language {}
 
-.Search_Bar_Select {}
+.Search_Bar_Select {
+    margin: 0 auto;
+    text-align: center;
+    font-size: large;
+    width: 30%;
+    height: 100%;
+}
 
 .Search_Bar_Box {
     margin: 0 auto;
