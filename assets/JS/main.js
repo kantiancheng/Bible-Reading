@@ -1,9 +1,9 @@
 window.onload = window_load();
 
+loading_box_onload();
 function window_load() {
    setTimeout(() => {
         try {
-            loading_box_onload();
             word_part_update("en_bbe", 0);
             side_bar_click();
         } catch (error) {
