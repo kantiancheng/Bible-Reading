@@ -10,6 +10,11 @@
 
 .Search_Bar_Select {}
 
-.Search_Bar_Box {}
+.Search_Bar_Box {
+    margin: 0 auto;
+    text-align: center;
+    font-size: large;
+    width: 15%;
+}
 
 .Search_Bar_Button {}
