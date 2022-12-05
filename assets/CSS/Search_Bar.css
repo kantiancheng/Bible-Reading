@@ -1,7 +1,7 @@
 .Search_Bar {
     margin: 0 auto;
     width: 90%;
-    height: 10%;
+    height: 5%;
     margin-bottom: 10px;
     background-color: aquamarine;
 }
@@ -11,7 +11,7 @@
     text-align: center;
     font-size: large;
     width: 30%;
-    height: 100%;
+    height: 4.4vh;
 }
 
 .Search_Bar_Select {
@@ -19,15 +19,21 @@
     text-align: center;
     font-size: medium;
     width: 30%;
-    height: 100%;
+    height: 4.4vh;
 }
 
 .Search_Bar_Box {
     margin: 0 auto;
     text-align: center;
     font-size: medium;
-    width: 20%;
-    height: 100%;
+    width: 10%;
+    height: 4.4vh;
 }
 
-.Search_Bar_Button {}
+.Search_Bar_Button {
+    margin: 0 auto;
+    text-align: center;
+    font-size: medium;
+    width: 20%;
+    height: 4.4vh;
+}
