@@ -1,6 +1,7 @@
 window.onload = window_load();
 
 loading_box_onload();
+
 function window_load() {
    setTimeout(() => {
         try {
