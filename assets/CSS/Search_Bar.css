@@ -27,10 +27,14 @@
 .Search_Bar_Box {
     margin: 0 auto;
     text-align: center;
-    font-size: x-small;
+    font-size: large;
     width: 10%;
     height: 4.3vh;
     float: left;
+}
+
+input::-webkit-input-placeholder{
+    font-size: x-small;
 }
 
 .Search_Bar_Button {
