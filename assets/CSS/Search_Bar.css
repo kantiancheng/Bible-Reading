@@ -9,7 +9,7 @@
 .Search_Bar_language {
     margin: 0 auto;
     text-align: center;
-    font-size: large;
+    font-size: medium;
     width: 30%;
     height: 4.95vh;
     float: left;
@@ -18,7 +18,7 @@
 .Search_Bar_Select {
     margin-left: 1.5%;
     text-align: center;
-    font-size: medium;
+    font-size: large;
     width: 30%;
     height: 4.95vh;
     float: left;
