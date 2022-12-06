@@ -12,14 +12,16 @@
     font-size: large;
     width: 30%;
     height: 4.95vh;
+    float: left;
 }
 
 .Search_Bar_Select {
-    margin: 0 auto;
+    margin-left: 1.5%;
     text-align: center;
     font-size: medium;
     width: 30%;
     height: 4.95vh;
+    float: left;
 }
 
 .Search_Bar_Box {
@@ -28,6 +30,7 @@
     font-size: x-small;
     width: 10%;
     height: 4.4vh;
+    float: left;
 }
 
 .Search_Bar_Button {
@@ -36,4 +39,5 @@
     font-size: medium;
     width: 15%;
     height: 4.95vh;
+    float: left;
 }
