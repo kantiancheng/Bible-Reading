@@ -35,6 +35,8 @@
 
 input::-webkit-input-placeholder{
     font-size: x-small;
+    text-align: center;
+    margin: 0 auto;
 }
 
 .Search_Bar_Button {
