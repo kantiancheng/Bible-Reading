@@ -8,7 +8,7 @@ function analyze_json(book, chapter, verse) {
             Revise += "<br><b style='font-size: xx-large; font-weight: bold;'>" + (i + 1) + "</b>";
             for (let j = 0; j < Analyze_json[i].length; j++) {
                 if ((j + 1) != 1) {
-                    Revise += "<sup>" + (j + 1) + "</sup>";
+                    Revise += "<sup><b>" + (j + 1) + "</b></sup>";
                 }
                 Revise += Analyze_json[i][j];
                 Revise += "<br><br>";
