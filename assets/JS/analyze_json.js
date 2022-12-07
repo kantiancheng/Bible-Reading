@@ -29,7 +29,9 @@ function analyze_json(book, chapter, verse) {
         Analyze_json = Revise;
         loading_box_update("The entire chapter is returned because there is no valid verse.");
     } else {
-        Analyze_json = Bible[book].chapters[chapter][verse];
+        Analyze_json += "<div style='margin: auto; font-size: xx-large;'>";
+        Analyze_json += Bible[book].chapters[chapter][verse];
+        Analyze_json += "</div>";
         loading_box_update("All information will be returned" + "chapter" + chapter + " ," + "verse" + verse + ".");
     }
     loading_box_update("Successfully analyze Json file:");
