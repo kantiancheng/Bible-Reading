@@ -20,9 +20,7 @@ function analyze_json(book, chapter, verse) {
         Analyze_json = Bible[book].chapters[chapter];
         let Revise = "";
         for (let i = 0; i < Analyze_json.length; i++) {
-            if ((i + 1) != 1) {
                 Revise += "<sup><b>" + (i + 1) + "</b></sup>";
-            }
             Revise += Analyze_json[i];
             Revise += "<br><br>";
         }
