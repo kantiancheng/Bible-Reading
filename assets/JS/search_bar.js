@@ -8,5 +8,5 @@ function search_bar() {
 
     let Language_JsonFileName = ['ar_svd', 'zh_cuv', ' zh_ncv', 'de_schlachter', 'el_greek', 'en_bbe', 'en_kjv', 'eo_esperanto', 'es_rvr', 'fi_finnish', 'fi_pr', 'fr_apee', 'ko_ko', 'pt_aa', 'pt_acf', 'pt_nvi', 'ro_cornilescu', 'ru_synodal', 'vi_vietnamese'];
 
-    word_part_update(Language_JsonFileName[Search_Bar.Language], Search_Bar.Chapter, Search_Bar.Verse);
+    word_part_update(Language_JsonFileName[Search_Bar.Language],Search_Bar.Book, Search_Bar.Chapter, Search_Bar.Verse);
 }
