@@ -8,6 +8,7 @@ function loading_box_onload() {
 
     let loading_box_Img = document.createElement("div");
     loading_box_Img.id = "Loading_box_img";
+    loading_box_Img.innerHTML="<img src='./assets/IMG/Bible Reading-logos.jpeg'>";
 
     let loading_box_Word = document.createElement("div");
     loading_box_Word.id = "Loading_box_word";
