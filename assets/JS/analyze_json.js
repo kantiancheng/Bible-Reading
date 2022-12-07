@@ -1,6 +1,6 @@
 //解析json
 function analyze_json(book, chapter, verse) {
-    let Analyze_json;
+    let Analyze_json = "";
     if (chapter == undefined || chapter == null || chapter == "") {
         Analyze_json = Bible[book].chapters;
         let Revise = "";
