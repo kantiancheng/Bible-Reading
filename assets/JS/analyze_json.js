@@ -5,10 +5,13 @@ function analyze_json(book, chapter, verse) {
         Analyze_json = Bible[book].chapters;
         let Revise = "";
         for (let i = 0; i < Analyze_json.length; i++) {
-            Revise += "<br><b style='    font-size: x-large; font-weight: bold;'>" + (i + 1) + "</b>";
+            Revise += "<br><b style='font-size: x-large; font-weight: bold;'>" + (i + 1) + "</b>";
             for (let j = 0; j < Analyze_json[i].length; j++) {
-                Revise += "<sup>" + (j + 1) + "</sup>";
+                if ((j + 1) != 1) {
+                    Revise += "<sup>" + (j + 1) + "</sup>";
+                }
                 Revise += Analyze_json[i][j];
+                Revise += "<br><br>";
             }
         }
         Analyze_json = Revise;
