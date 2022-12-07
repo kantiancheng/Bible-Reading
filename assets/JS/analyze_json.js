@@ -17,8 +17,11 @@ function analyze_json(book, chapter, verse) {
         Analyze_json = Bible[book].chapters[chapter];
         let Revise = "";
         for (let i = 0; i < Analyze_json.length; i++) {
-            Revise += "<sup><b>" + (i + 1) + "</b></sup>";
+            if ((i + 1) == 1) {
+                Revise += "<sup><b>" + (i + 1) + "</b></sup>";
+            }
             Revise += Analyze_json[i];
+            Revise += "<br>";
         }
         Analyze_json = Revise;
         loading_box_update("The entire chapter is returned because there is no valid verse.");
