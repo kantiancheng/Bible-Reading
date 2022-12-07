@@ -1,7 +1,41 @@
 .Loading_box {
-   
+    z-index: 1000;
+    position: fixed;
 }
 
-#Loading_box_img{}
+#Loading_box_img {
 
-#Loading_box_word{}
+
+    /*动画*/
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation: myfirst 5s;
+    -webkit-animation: myfirst 5s;
+}
+
+#Loading_box_word {}
+
+
+/*动画*/
+@keyframes myfirst {
+    from {
+        background: red;
+    }
+
+    to {
+        background: yellow;
+    }
+}
+
+@-webkit-keyframes myfirst
+
+/* Safari and Chrome */
+    {
+    from {
+        background: red;
+    }
+
+    to {
+        background: yellow;
+    }
+}
