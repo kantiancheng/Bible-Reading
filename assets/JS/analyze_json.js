@@ -21,7 +21,7 @@ function analyze_json(book, chapter, verse) {
                 Revise += "<sup><b>" + (i + 1) + "</b></sup>";
             }
             Revise += Analyze_json[i];
-            Revise += "<br>";
+            Revise += "<br><br>";
         }
         Analyze_json = Revise;
         loading_box_update("The entire chapter is returned because there is no valid verse.");
