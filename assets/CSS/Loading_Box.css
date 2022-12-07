@@ -1,6 +1,10 @@
 .Loading_box {
     z-index: 1000;
     position: fixed;
+    height: 40vh;
+    width: 40vh;
+    border-radius: 10px;
+    background-color: black;
 }
 
 #Loading_box_img {
