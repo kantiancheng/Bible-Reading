@@ -20,12 +20,13 @@ function loading_box_onload() {
 
 //加载框更新
 function loading_box_update(words) {
-
+    document.getElementById("Loading_box").style.display = "inline";
+    let Loading_box_word = document.getElementById("Loading_box_word");
+    Loading_box_word.innerHTML = words;
     console.log("%c" + words, "font-weight:bold;");
 }
 
 //加载框删除
 function loading_box_remove() {
     document.getElementById("Loading_box").style.display = "none";
-    document.getElementById("Main_Box").style.display = "inline";
 }
