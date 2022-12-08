@@ -6,6 +6,7 @@
     background-color: rgb(255, 255, 255);
     left: 40%;
     top: 33%;
+    border-radius: 10px;
 }
 
 #Loading_box_img {
