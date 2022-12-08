@@ -1,6 +1,6 @@
 //加载框
 function loading_box_onload() {
-    let loading_box_HTML = document.getElementById("Words_Part");
+    let loading_box_HTML = document.getElementById("Words_Part_Main");
 
     let loading_box_Main = document.createElement("div");
     loading_box_Main.id = "Loading_box";
