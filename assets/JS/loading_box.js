@@ -34,13 +34,5 @@ function loading_box_update(words) {
 
 //加载框删除
 function loading_box_remove() {
-    if (Loading_finish) {
-        setTimeout(() => {
-            document.getElementById("Loading_box").style.display = "none";
-        }, 2000);
-    } else{
-        setInterval(() => {
-            loading_box_remove();
-        }, 1000);
-    }
+    document.getElementById("Loading_box").style.display = "none";
 }
