@@ -43,7 +43,7 @@ function loading_box_remove() {
         if (Loading_Box_Remove_Score > 5) {
             document.getElementById("Loading_box").style.display = "none";
         } else {
-            Loading_Box_Remove_Dom_New = document.getElementById("Loading_box_word");
+            Loading_Box_Remove_Dom_New = document.getElementById("Loading_box_word").innerHTML;
             Loading_Box_Remove_Dom = Loading_Box_Remove_Dom_New;
             if (Loading_Box_Remove_Dom_New == Loading_Box_Remove_Dom) {
                 Loading_Box_Remove_Score++;
