@@ -41,7 +41,9 @@ let Loading_Box_Remove_Dom;
 function loading_box_remove() {
     setInterval(() => {
         if (Loading_Box_Remove_Score > 5) {
-            document.getElementById("Loading_box").style.display = "none";
+            setTimeout(() => {
+                document.getElementById("Loading_box").style.display = "none";
+            }, 3000);
         } else {
             Loading_Box_Remove_Dom_New = document.getElementById("Loading_box_word").innerHTML;
             Loading_Box_Remove_Dom = Loading_Box_Remove_Dom_New;
