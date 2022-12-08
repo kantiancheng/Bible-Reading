@@ -8,7 +8,7 @@ function loading_box_onload() {
 
     let loading_box_Img = document.createElement("div");
     loading_box_Img.id = "Loading_box_img";
-    loading_box_Img.innerHTML="<img src='./assets/IMG/Bible Reading-logos.jpeg'>";
+    loading_box_Img.innerHTML = "<img src='./assets/IMG/Bible Reading-logos.jpeg'>";
 
     let loading_box_Word = document.createElement("div");
     loading_box_Word.id = "Loading_box_word";
@@ -21,6 +21,7 @@ function loading_box_onload() {
 
 //加载框更新
 let loading_box_update_Time_out = 300;
+let Loading_finish = false;
 function loading_box_update(words) {
     loading_box_update_Time_out = loading_box_update_Time_out + 300;
     setTimeout(() => {
@@ -33,7 +34,13 @@ function loading_box_update(words) {
 
 //加载框删除
 function loading_box_remove() {
-    setTimeout(() => {
-        document.getElementById("Loading_box").style.display = "none";
-    }, 2000);
+    if (Loading_finish) {
+        setTimeout(() => {
+            document.getElementById("Loading_box").style.display = "none";
+        }, 2000);
+    } else{
+        setInterval(() => {
+            loading_box_remove();
+        }, 1000);
+    }
 }
