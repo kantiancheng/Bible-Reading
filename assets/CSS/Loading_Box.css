@@ -13,9 +13,7 @@
     height: 30vh;
     width: 30vh;
     /*动画*/
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
-    animation: myfirst 0.5s;
+    animation: myfirst 1s infinite alternate;
     -webkit-animation: myfirst 0.5;
 }
 
@@ -45,8 +43,8 @@
     }
 
     to {
-        height: 35vh;
-        width: 35vh;
+        height: 33vh;
+        width: 33vh;
     }
 }
 
