@@ -4,11 +4,12 @@
     height: 40vh;
     width: 40vh;
     background-color: rgb(255, 255, 255);
-    justify-content: center;
-    align-items: center;
+    left: 40%;
+    top: 33%;
 }
 
 #Loading_box_img {
+    margin: auto;
     border-radius: 10px;
     height: 30vh;
     width: 30vh;
