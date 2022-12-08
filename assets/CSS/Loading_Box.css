@@ -15,7 +15,7 @@
     width: 30vh;
     /*动画*/
     animation: myfirst 1s infinite alternate;
-    -webkit-animation: myfirst 0.5;
+    -webkit-animation: myfirst 1s infinite alternate;
 }
 
 #Loading_box_img>img {
@@ -49,15 +49,14 @@
     }
 }
 
-@-webkit-keyframes myfirst
-
-/* Safari and Chrome */
-    {
+@-webkit-keyframes myfirst {
     from {
-        background: red;
+        height: 30vh;
+        width: 30vh;
     }
 
     to {
-        background: yellow;
+        height: 33vh;
+        width: 33vh;
     }
 }
