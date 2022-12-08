@@ -6,7 +6,7 @@ function search_bar() {
     Search_Bar.Chapter--;
     Search_Bar.Verse = Number(document.getElementById("Search_Bar_Box_V").value);
     Search_Bar.Verse--;
-    Search_Bar.Language = document.getElementById("Search_Bar_Box_L").selectedIndex;
+    Search_Bar.Language = Number(document.getElementById("Search_Bar_Box_L").selectedIndex);
 
     let Language_JsonFileName = ['ar_svd', 'zh_cuv', 'zh_ncv', 'de_schlachter', 'el_greek', 'en_bbe', 'en_kjv', 'eo_esperanto', 'es_rvr', 'fi_finnish', 'fi_pr', 'fr_apee', 'ko_ko', 'pt_aa', 'pt_acf', 'pt_nvi', 'ro_cornilescu', 'ru_synodal', 'vi_vietnamese'];
 
