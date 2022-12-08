@@ -29,5 +29,7 @@ function loading_box_update(words) {
 
 //加载框删除
 function loading_box_remove() {
-    document.getElementById("Loading_box").style.display = "none";
+    setTimeout(() => {
+        document.getElementById("Loading_box").style.display = "none";
+    }, 2000);
 }
