@@ -20,6 +20,8 @@
 }
 
 #Loading_box_img>img {
+    border-radius: 10px;
+    margin: 0 auto;
     width: 100%;
     height: 100%;
 }
@@ -32,11 +34,13 @@
 /*动画*/
 @keyframes myfirst {
     from {
-        background: red;
+        height: 30vh;
+        width: 30vh;
     }
 
     to {
-        background: yellow;
+        height: 35vh;
+        width: 35vh;
     }
 }
 
