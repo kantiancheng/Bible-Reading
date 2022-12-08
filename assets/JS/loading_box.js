@@ -13,7 +13,10 @@ function loading_box_onload() {
     let loading_box_Word = document.createElement("div");
     loading_box_Word.id = "Loading_box_word";
 
+    let Br = document.createElement("br");
+
     loading_box_Main.append(loading_box_Img);
+    loading_box_Main.append(Br);
     loading_box_Main.append(loading_box_Word);
 
     loading_box_HTML.append(loading_box_Main);
