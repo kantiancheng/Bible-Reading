@@ -27,6 +27,7 @@
 }
 
 #Loading_box_word {
+    width: 100%;
     margin: 0 auto;
     font-family: 'Courier New', Courier, monospace;
 }
