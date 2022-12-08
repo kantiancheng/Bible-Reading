@@ -1,7 +1,7 @@
 //解析json
 function analyze_json(book, chapter, verse) {
     let Analyze_json = "";
-    if (chapter == undefined || chapter == null || chapter == "") {
+    if (chapter == undefined || chapter == null || chapter === "") {
         Analyze_json = Bible[book].chapters;
         let Revise = "";
         for (let i = 0; i < Analyze_json.length; i++) {
@@ -16,7 +16,7 @@ function analyze_json(book, chapter, verse) {
         }
         Analyze_json = Revise;
         loading_box_update("Since there are no valid chapters, the entire book will be returned directly.");
-    } else if (verse == undefined || verse == null || verse == "") {
+    } else if (verse == undefined || verse == null || verse === "") {
         Analyze_json = Bible[book].chapters[chapter];
         let Revise = "";
         for (let i = 0; i < Analyze_json.length; i++) {
