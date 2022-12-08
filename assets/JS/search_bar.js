@@ -1,11 +1,10 @@
 //顶部搜索栏
 function search_bar() {
     let Search_Bar = new Object();
-    Search_Bar.Book = document.getElementById("Search_Bar_Box_B").selectedIndex;
-    Search_Bar.Book--;
-    Search_Bar.Chapter = document.getElementById("Search_Bar_Box_C").value;
+    Search_Bar.Book = Number(document.getElementById("Search_Bar_Box_B").selectedIndex);
+    Search_Bar.Chapter = Number(document.getElementById("Search_Bar_Box_C").value);
     Search_Bar.Chapter--;
-    Search_Bar.Verse = document.getElementById("Search_Bar_Box_V").value;
+    Search_Bar.Verse = Number(document.getElementById("Search_Bar_Box_V").value);
     Search_Bar.Verse--;
     Search_Bar.Language = document.getElementById("Search_Bar_Box_L").selectedIndex;
 
