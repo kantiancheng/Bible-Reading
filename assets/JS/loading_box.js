@@ -20,11 +20,15 @@ function loading_box_onload() {
 }
 
 //加载框更新
+let loading_box_update_Time_out = 300;
 function loading_box_update(words) {
-    document.getElementById("Loading_box").style.display = "inline";
-    let Loading_box_word = document.getElementById("Loading_box_word");
-    Loading_box_word.innerHTML = words;
-    console.log("%c" + words, "font-weight:bold;");
+    loading_box_update_Time_out = loading_box_update_Time_out + 300;
+    setTimeout(() => {
+        document.getElementById("Loading_box").style.display = "inline";
+        let Loading_box_word = document.getElementById("Loading_box_word");
+        Loading_box_word.innerHTML = words;
+        console.log("%c" + words, "font-weight:bold;");
+    }, loading_box_update_Time_out);
 }
 
 //加载框删除
