@@ -43,6 +43,7 @@ function loading_box_remove() {
         if (Loading_Box_Remove_Score > 5) {
             document.getElementById("Loading_box").style.display = "none";
             setTimeout(() => {
+                //重新设定（备用）
                 document.getElementById("Loading_box").style.display = "none";
             }, 5000);
         } else {
