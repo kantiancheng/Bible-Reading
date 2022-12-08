@@ -15,8 +15,8 @@
     /*动画*/
     animation-iteration-count: infinite;
     animation-direction: alternate;
-    animation: myfirst 5s;
-    -webkit-animation: myfirst 5s;
+    animation: myfirst 2s;
+    -webkit-animation: myfirst 2s;
 }
 
 #Loading_box_img>img {
